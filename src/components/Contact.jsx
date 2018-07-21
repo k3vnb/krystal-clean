@@ -2,7 +2,6 @@ import React from 'react';
 import instagramIcon from '../assets/images/icons/instagram-icon.png';
 import skyBG from '../assets/images/sky-bg.jpg';
 import gmailIcon from '../assets/images/icons/gmail-icon.png';
-import githubIcon from '../assets/images/icons/github-icon.png';
 import linkedinIcon from '../assets/images/icons/linkedin-icon.png';
 import ParallaxContactHeader from './ParallaxContactHeader';
 import wallpaper from '../assets/images/body-bg.svg';
@@ -85,10 +84,10 @@ function Contact(){
       <div className="contact-container">
         <div className="contact-page-inner">
           <div className="contact-box contact-top-left">
-            <a href="mailto:boyle.kevin.michael@gmail?Subject=Hi%20Kevin" title="email boyle.kevin.michael@gmail.com"><img className="gmail-icon icon" src={gmailIcon} alt="boyle.kevin.michael@gmail.com" /></a>
+            <a href="mailto:##" title="email @gmail.com"><img className="gmail-icon icon" src={gmailIcon} alt="Krystal Clean" /></a>
           </div>
           <div className="contact-box contact-top-right">
-            <a href="http://www.github.com/lemurriot" target="_blank" title="Go to Kevin's Github"><img className="github-icon icon" src={githubIcon} /></a>
+
           </div>
           <div className="contact-box contact-bottom-left">
             <a href="http://www.instagram.com/k3vnb33" target="_blank" title="Go to Kevin's Instagram"><img className="instagram-icon icon" src={instagramIcon} /></a>

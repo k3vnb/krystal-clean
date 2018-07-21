@@ -111,25 +111,10 @@ function About() {
         </div>
       </div>
       <div className="about-lower">
-        <p><span className="leader-text2">I consider coding to be a craft and an artform</span>, an opportunity for lifelong learning and for building on life experiences. My personal mission is to contribute and facilitate meaningful art, interaction, and dialogue to society and to build positive relationships with peers, clients, and users.</p>
-        <p>My background is in anthropology, education, cross-cultural communication, and community management. As an undergraduate at the University of Toronto, I was immersed in post-structural ideas on human communication in the age of digital media. Later I joined the Peace Corps in Turkmenistan, where I developed an English language program for a remote and isolated village. Over the years I've studied music, art, language, and philosophy. When I first learned to code, I immediately realized that I had found the platform that would combine all of my passions and interests with endless possibilities.</p>
-        <p className="leader-text2">My skillset includes:</p>
-        <ul className="skills-list">
-          <li>Javascript</li>
-          <li>React/Redux</li>
-          <li>HTML5/CSS3</li>
-          <li>Sass/SCSS</li>
-          <li>SVG/Vector Graphic Illustration</li>
-          <li>MVC</li>
-          <li>API Integration</li>
-          <li>NodeJS/NPM</li>
-          <li>jQuery</li>
-          <li>Mobile Responsive Design</li>
-          <li>SEO</li>
-          <li>Behavior Driven Development</li>
-          <li>Creative Problem Solving</li>
-          <li>Cross-cultural Communication</li>
-        </ul>
+        <p><span className="leader-text2">Sed ut perspiciatis unde omnis</span> iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+
+
       </div>
     </div>
   );

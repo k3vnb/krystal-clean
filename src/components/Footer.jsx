@@ -35,10 +35,10 @@ function Footer(){
           }
           `}</style>
       <div style={footerRightStyleSheet}>
-        <h3>Kevin Boyle</h3>
+        <h3>Krystal Clean</h3>
       </div>
       <div style={footerLeftStyleSheet}>
-        <h3 className="footer-left"><span className="display-none-sm-scrn">email me at </span> boyle.kevin.michael@gmail.com</h3>
+        <h3 className="footer-left"><span className="display-none-sm-scrn">email me at </span> krystalclean@gmail.com</h3>
       </div>
     </div>
   );

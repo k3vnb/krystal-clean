@@ -28,6 +28,10 @@ class App extends React.Component {
             background-color: white;
             height: 200px;
           }
+          .slideshow img {
+            height: 70vh;
+            object-fit: cover;
+          }
           @media screen and (max-width: 500px){
             .main-container {
               margin: 3% 8%;

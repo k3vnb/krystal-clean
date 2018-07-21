@@ -1,6 +1,5 @@
 import React from 'react';
 import Header from './Header';
-import GalleryList from './GalleryList';
 import Contact from './Contact';
 import Nav from './Nav';
 import About from './About';
@@ -23,7 +22,6 @@ class LandingPage extends React.Component {
               `}</style>
           <Header />
           <About />
-          <GalleryList />
           <Contact />
           <Nav />
         </div>

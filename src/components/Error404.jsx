@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import walrus from '../assets/images/gallery/walrus.png';
+import mop from '../assets/slideshow/mop.jpg';
 
 function Error404(props){
   return (
     <div className="error404-container">
       <style jsx>{`
           .error404-container {
-            background-image: url(${walrus});
+            background-image: url(${mop});
             background-repeat: no-repeat;
             background-size: cover;
             height: 100vh;

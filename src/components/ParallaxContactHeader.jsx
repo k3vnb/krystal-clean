@@ -1,6 +1,6 @@
 import React from 'react';
 import { Parallax } from 'react-scroll-parallax';
-import wallpaper from '../assets/images/body-bg.svg';
+
 
 const ParallaxContactHeader = () => (
   <Parallax
@@ -36,7 +36,7 @@ const ParallaxContactHeader = () => (
       }
       `}</style>
     <div className="contact-banner-container">
-      <img className="contact-banner" src={wallpaper}/>
+
       <h1 className="contact-title">Contact</h1>
     </div>
 

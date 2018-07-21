@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/images/logo.png';
+
 
 
 
@@ -86,13 +86,24 @@ class Nav extends React.Component {
 
 
     return(
-      <div className="topbar">
+      <div className={this.state.navOpacityFull ? 'topbar-on' : 'topbar-off'}>
         <style jsx>{`
-          .topbar {
+          .topbar-on {
             position: fixed;
             top: -.5%;
             left: 0%;
             width: 100%;
+            opacity: 1;
+            background-color: white;
+            border-bottom: .5px solid #ffa90e8c;
+            height: 7.8vh;
+          }
+          .topbar-off {
+            position: fixed;
+            top: -.5%;
+            left: 0%;
+            width: 100%;
+            opacity: 0;
             background-color: white;
             border-bottom: .5px solid #ffa90e8c;
             height: 7.8vh;
@@ -100,6 +111,7 @@ class Nav extends React.Component {
           .topbar-links-container-off {
             height: 100%;
             width: 80%;
+            z-index: -5;
             display: -webkit-box;
             display: -ms-flexbox;
             display: flex;
@@ -109,7 +121,6 @@ class Nav extends React.Component {
             -webkit-box-align: center;
                 -ms-flex-align: center;
                     align-items: center;
-            opacity: 0;
             -webkit-animation: become-transparent .2s;
                     animation: become-transparent .2s;
             margin-left: 5%;
@@ -185,8 +196,8 @@ class Nav extends React.Component {
                     transform: scale(1.025);
             text-shadow: 0px 1px 5px #ffee0087;
           }
-          .self-portrait {
-            max-height: 7.1vh;
+          .logo {
+            max-height: 80px;
             -o-object-fit: contain;
                object-fit: contain;
             margin-top: 1vh;
@@ -195,11 +206,11 @@ class Nav extends React.Component {
             -o-transition: .6s transform ease-out;
             transition: .6s transform ease-out;
           }
-          .self-portrait:hover {
+          .logo:hover {
             -webkit-transform: rotateY(180deg);
                     transform: rotateY(180deg);
           }
-          .self-portrait:active {
+          .logo:active {
             -webkit-transform: rotateX(180deg);
                     transform: rotateX(180deg);
           }
@@ -247,7 +258,7 @@ class Nav extends React.Component {
         <div className={this.state.navOpacityFull ? 'topbar-links-container-on' : 'topbar-links-container-off'}>
           <div>
             <div className="nav-link-topbar" onClick={() => scrollToTop()}>
-              <img className="self-portrait" src={logo} alt="Kevin Boyle" title="Back to Top"/>
+              <img className="logo" src="http://res.cloudinary.com/kboyle/image/upload/v1532152426/krystalclean1.png" alt="Krystal Clean PDX"/>
             </div>
           </div>
           <div className="nav-links-right">

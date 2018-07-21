@@ -1,7 +1,14 @@
-import React from 'react';
-import wallpaper from '../assets/images/body-bg.svg';
-import skyBG from '../assets/images/sky-bg.jpg';
-import HeaderParallax from './HeaderParallax';
+import React, { Component } from 'react';
+import emblem from '../assets/images/emblem.svg';
+import { Slide, Fade } from 'react-slideshow-image';
+
+// import vacuum from 'assets/slideshow/vacuum.jpg';
+import bathroom from '../assets/slideshow/bathroom.jpg';
+// import mop from 'assets/slideshow/mop.jpg';
+// import bathroom from 'assets/slideshow/bathroom.jpg';
+
+
+
 
 
 class Header extends React.Component {
@@ -11,90 +18,59 @@ class Header extends React.Component {
       navOpacityFull: false
     };
   }
+
   render(){
+
+    const images = [
+      'http://res.cloudinary.com/kboyle/image/upload/c_scale,w_3686/v1532159129/kitchen.jpg',
+      'http://res.cloudinary.com/kboyle/image/upload/c_scale,w_3577/v1532159126/mop.jpg',
+      'http://res.cloudinary.com/kboyle/image/upload/c_scale,w_2398/v1532159126/bathroom.jpg',
+      'http://res.cloudinary.com/kboyle/image/upload/c_scale,w_2398/v1532159126/vacuum.jpg'
+    ];
     return (
       <div className="header-and-nav">
         <style jsx>{`
             .header-and-nav {
               height: 100vh;
+              border-bottom: 5px solid yellow;
             }
-            .header-container {
-              height: 100%;
-              background-color: white;
-              position: relative;
-              z-index: 2;
-              animation: color-change 14s linear infinite;
-            }
-            @keyframes color-change {
-              0% {
-                background-color: #8bd8fb;
-              }
-              50% {
-                background-color: white;
-              }
-              100% {
-                background-color: #8bd8fb;
-              }
-            }
-            .wallpaper-div {
-              background-image: url(${wallpaper});
-              height: 100%;
-              background-repeat: repeat-y;
-              background-size: cover;
-              background-position: bottom;
-              position: sticky;
-              top: -525px;
-            }
-            .background-img2 {
-              background-image: url(${skyBG});
-              background-size: 25%;
-              background-position: 50% 50%;
-              position: absolute;
-              top: 0%;
-              left: 0%;
-              height: 100%;
+            .header-top {
+              height: 25vh;
               width: 100%;
+              background-color: #71e6d9;
             }
-            .background-img {
-              height: 100%;
-              width: 100%;
-              background-image: url(${skyBG});
-              background-size: 10%;
-              background-position: center;
-              opacity: .1;
-              animation: opacity-change 1.5s ease-in;
-              position: absolute;
-              top: 0%;
-              bottom: 0%;
+            .slideshow {
+              height: 75vh;
+              border: 1px solid grey;
             }
-            @keyframes opacity-change {
-              0% {
-                opacity: .5;
-                background-size: 33%;
-              }
-
-              100% {
-                opacity: .1;
-                background-size: 10%;
-              }
-            }
-            .header-overlay {
-              background: linear-gradient(217deg,rgba(33, 150, 243, 0.33),rgba(255,0,0,0) 70.71%), linear-gradient(145deg,rgba(0, 67, 255, 0),rgba(0,255,0,0) 70.71%), linear-gradient(336deg,rgba(161, 170, 197, 0),rgba(0,0,255,0) 70.71%);
-              height: 100%;
+            .logo {
+              margin: 1% 0%;
+              max-height: 180px;
+              margin-left: 3%;
+              border: 1px solid blue;
+              height: 185px;
+              width: 185px;
               display: flex;
               justify-content: center;
-              align-items: center;
-              z-index: 3;
+              border-radius: 50%;
+              background-color: white;
+            }
+            .logo img {
+              height: 100%;
             }
             `}</style>
         <div className="header-container">
-          <div className="background-img2"></div>
-          <div className="wallpaper-div">
-            <div className="background-img">
+          <div className="header-top">
+            <div className="logo">
+              <img src="http://res.cloudinary.com/kboyle/image/upload/v1532152426/krystalclean1.png" alt="Krystal Clean PDX"/>
             </div>
-              <div className="header-overlay">
-                <HeaderParallax />
-              </div>
+          </div>
+          <div className="slideshow">
+            <Fade
+              images={images}
+              duration={8000}
+              transitionDuration={1000}
+              />
           </div>
         </div>
       </div>
