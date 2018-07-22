@@ -82,7 +82,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Portfolio Draft',
+      title: 'Krystal Clear Cleaners',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]

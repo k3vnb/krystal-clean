@@ -1,14 +1,9 @@
 import React, { Component } from 'react';
-import emblem from '../assets/images/emblem.svg';
 import { Slide, Fade } from 'react-slideshow-image';
-
+import logo from '../assets/images/main-logo.png';
 // import vacuum from 'assets/slideshow/vacuum.jpg';
-import bathroom from '../assets/slideshow/bathroom.jpg';
 // import mop from 'assets/slideshow/mop.jpg';
 // import bathroom from 'assets/slideshow/bathroom.jpg';
-
-
-
 
 
 class Header extends React.Component {
@@ -38,6 +33,11 @@ class Header extends React.Component {
               height: 25vh;
               width: 100%;
               background-color: #71e6d9;
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              font-family: Basic;
+              color: #2f2f2f;
             }
             .slideshow {
               height: 75vh;
@@ -46,24 +46,26 @@ class Header extends React.Component {
             .logo {
               margin: 1% 0%;
               max-height: 180px;
-              margin-left: 3%;
-              border: 1px solid blue;
+              border: 1px solid #00ffe1;
               height: 185px;
               width: 185px;
               display: flex;
               justify-content: center;
+              align-items: center;
               border-radius: 50%;
               background-color: white;
             }
             .logo img {
-              height: 100%;
+              height: 120%;
             }
+
             `}</style>
         <div className="header-container">
           <div className="header-top">
             <div className="logo">
-              <img src="http://res.cloudinary.com/kboyle/image/upload/v1532152426/krystalclean1.png" alt="Krystal Clean PDX"/>
+              <img src={logo} alt="Krystal Clean PDX"/>
             </div>
+            <h2>Professional Home Cleaning Services in the Portland, OR area</h2>
           </div>
           <div className="slideshow">
             <Fade

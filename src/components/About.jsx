@@ -1,5 +1,5 @@
 import React from 'react';
-
+import icon from '../assets/images/icon.png'
 function About() {
 
   return(
@@ -9,6 +9,9 @@ function About() {
             font-family: 'Carrois Gothic', sans-serif;
             min-height: 120vh;
             margin-bottom: 55vw;
+          }
+          .icon-img {
+            height: 500%;
           }
           .about-upper {
             display: flex;
@@ -41,10 +44,7 @@ function About() {
             width: 120%;
             margin-left: -10%;
           }
-          .hi {
-            margin-right: 12%;
-            font-size: 14vw;
-          }
+
           .leader-text {
             font-size: 2.5vw;
             margin-left: -4px;
@@ -104,7 +104,7 @@ function About() {
             `}</style>
       <div className="about-upper">
         <div className="about-upper-half about-upper-left">
-          <h2 className="hi">Hi</h2>
+          <img className="icon-img" src={icon}/>
         </div>
         <div className="about-upper-half about-upper-right">
           <p><span className="leader-text">Thank you</span> for visiting. My name is Kevin. I live in Portland, Oregon, where I design & develop websites.</p>

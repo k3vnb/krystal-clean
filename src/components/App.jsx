@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div style={appStyleSheet}>
         <style jsx global>{`
-          @import url('https://fonts.googleapis.com/css?family=Carrois+Gothic+SC|Didact+Gothic|Dosis|Josefin+Sans|Work+Sans');
+          @import url('https://fonts.googleapis.com/css?family=Basic');
           * {
             box-sizing: border-box;
             margin: 0%;
@@ -29,7 +29,7 @@ class App extends React.Component {
             height: 200px;
           }
           .slideshow img {
-            height: 70vh;
+            height: 74vh;
             object-fit: cover;
           }
           @media screen and (max-width: 500px){
