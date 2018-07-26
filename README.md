@@ -1,6 +1,6 @@
-# Portfolio Draft
+# Krystal Clear Cleaners
 
 ## Description
-This repository is for the development of a draft personal portfolio website being built in React.
+Static Commercial Site built in React.
 
-### By _Kevin Boyle_ May/June 2018
+### By _Kevin Boyle_ July 2018
