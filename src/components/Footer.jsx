@@ -25,6 +25,9 @@ function Footer(){
           .copy-to-clipboard:hover {
             cursor: pointer;
           }
+          a {
+            color: white;
+          }
           @media screen and (max-width: 430px){
             .display-none-sm-scrn {
               display: none;
@@ -35,10 +38,10 @@ function Footer(){
           }
           `}</style>
       <div style={footerRightStyleSheet}>
-        <h3>Krystal Clean</h3>
+        <h3>Krystal Clear Cleaning</h3>
       </div>
       <div style={footerLeftStyleSheet}>
-        <h3 className="footer-left"><span className="display-none-sm-scrn">email me at </span> krystalclean@gmail.com</h3>
+        <h3 className="footer-left">site <span className="display-none-sm-scrn">design </span> by <a href="http://pdxwebdev.io" alt="Kevin Boyle, PDX Web Dev">PDX Web Dev</a></h3>
       </div>
     </div>
   );

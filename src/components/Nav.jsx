@@ -86,7 +86,7 @@ class Nav extends React.Component {
             width: 100%;
             opacity: 1;
             background-color: white;
-            border-bottom: .5px solid #ffa90e8c;
+            border-bottom: .5px solid #9afff2;
             height: 7.8vh;
             transition: opacity .5s ease-in;
           }
@@ -97,7 +97,7 @@ class Nav extends React.Component {
             width: 100%;
             opacity: 0;
             background-color: white;
-            border-bottom: .5px solid #ffa90e8c;
+            border-bottom: .5px solid #9afff2;
             height: 7.8vh;
           }
           .topbar-links-container-off {
@@ -145,6 +145,7 @@ class Nav extends React.Component {
           }
           .nav-link-underline {
             border-bottom: 1px solid #87fff1;
+            border-top: 1px solid #87fff1;
             animation: 1s underline ease-in;
           }
           .nav-link-reverse-underline {
@@ -154,17 +155,21 @@ class Nav extends React.Component {
           @keyframes underline {
             from {
               border-bottom: 0px solid #87fff1;
+              border-top: 0px solid #87fff1;
             }
             to {
               border-bottom: 1px solid #87fff1;
+              border-top: 1px solid #87fff1;
             }
           }
           @keyframes reverse-underline {
             from {
               border-bottom: 1px solid #87fff1;
+              border-top: 1px solid #87fff1;
             }
             to {
               border-bottom: 0px solid #87fff1;
+              border-top: 0px solid #87fff1;
             }
           }
           .nav-link-topbar {
@@ -241,6 +246,10 @@ class Nav extends React.Component {
               margin-left: 0;
             }
           }
+          @media screen and (max-width: 480px){
+            .logo {
+              max-height: 150px;
+            }
           `}</style>
         <div className={this.state.navOpacityFull ? 'topbar-links-container-on' : 'topbar-links-container-off'}>
           <div>

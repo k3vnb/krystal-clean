@@ -116,6 +116,19 @@ class Header extends React.Component {
                 left: 0%;
               }
             }
+            @media screen and (max-width: 380px){
+              .header-title h1 {
+                font-size: 1em;
+              }
+              .slideshow-overlay {
+                font-size: 2.7em;
+              }
+            }
+            @media screen and (max-width: 330px){
+              .slideshow-overlay {
+                font-size: 2.5em;
+              }
+            }
             `}</style>
         <div className="header-container">
           <div className="header-top">

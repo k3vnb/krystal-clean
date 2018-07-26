@@ -85,8 +85,6 @@ function About() {
           .card-bottom li {
             list-style: circle;
           }
-
-
           @media screen and (max-width: 900px){
             .main-container {
               margin-bottom: 80vh;
@@ -123,6 +121,11 @@ function About() {
               max-height: 360px;
             }
           }
+          @media screen and (max-width: 700px){
+            .main-container {
+              margin-bottom: 55vh;
+            }
+          }
           @media screen and (max-width: 480px){
             .card-bottom {
               font-size: .9em;
@@ -130,7 +133,24 @@ function About() {
             .main-container {
               margin-bottom: 40vh;
             }
+            .icon-img, .icon-img2 {
+              display: none;
+            }
         }
+        @media screen and (max-width: 380px){
+          .subheader-text {
+            font-size: 16px;
+          }
+          .main-container {
+            margin-bottom: 60vh;
+          }
+        @media screen and (max-width: 330px){
+          .subheader-text {
+            font-size: 14px;
+          }
+          .main-container {
+            margin-bottom: 85vh;
+          }
             `}</style>
 
           <div className="subheader-text">

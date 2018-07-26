@@ -18,12 +18,6 @@ const ParallaxContactHeader = () => (
       .contact-banner-container {
         position: relative;
       }
-      .contact-banner {
-        height: 250px;
-        width: 100%;
-        opacity: .3;
-        object-fit: cover;
-      }
 
       .contact-title {
         color: #33b5a7;
@@ -36,10 +30,23 @@ const ParallaxContactHeader = () => (
       .contact-title img {
         max-height: 200px;
       }
+      @media screen and (max-width: 380px){
+        .contact-title img {
+          max-height: 150px;
+        }
+      }
+      @media screen and (max-width: 330px){
+        .contact-title img {
+          max-height: 150px;
+        }
+        .disp-none-sm-scrn {
+          display: none;
+        }
+      }
       `}</style>
     <div className="contact-banner-container">
 
-      <h1 className="contact-title"><img src={vacuum1} alt="portland's best vacuuming"/>Contact Us</h1>
+      <h1 className="contact-title"><img src={vacuum1} alt="portland's best vacuuming"/>Contact <span className="disp-none-sm-scrn">Us</span></h1>
     </div>
 
   </Parallax>
