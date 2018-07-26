@@ -43,7 +43,26 @@ class Header extends React.Component {
             }
             .slideshow {
               height: 75vh;
-              border: 1px solid grey;
+              border-top: 2px solid yellow;
+              position: relative;
+            }
+            .slideshow-overlay {
+              color: white;
+              font-size: 3em;
+              text-shadow: 1px 1px 2px black;
+              position: absolute;
+              height: 99%;
+              top: 0%;
+              left: 65%;
+              background-color: #00000070;
+              padding: 5% 10%;
+              font-family: Basic;
+            }
+            .slideshow-overlay li {
+              list-style: none;
+              margin-bottom: 10%;
+              padding-bottom: 2%;
+              border-bottom: .5px solid white;
             }
             .logo {
               margin: 1% 0%;
@@ -67,7 +86,10 @@ class Header extends React.Component {
             <div className="logo">
               <img src={logo} alt="Krystal Clean PDX"/>
             </div>
-            <h2>Professional Home Cleaning Services in the Portland, OR area</h2>
+            <div>
+              <h1>Krystal Clear Cleaners, LLC</h1>
+              <h2>Professional Home Cleaning Services in the Portland, OR area</h2>
+            </div>
           </div>
           <div className="slideshow">
             <Fade
@@ -75,6 +97,11 @@ class Header extends React.Component {
               duration={8000}
               transitionDuration={1000}
               />
+            <ul className="slideshow-overlay">
+              <li>Regular Cleaning</li>
+              <li>Deep Cleaning</li>
+              <li>Eco-Friendly Cleaning</li>
+            </ul>
           </div>
         </div>
       </div>

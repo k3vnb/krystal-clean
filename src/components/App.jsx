@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div style={appStyleSheet}>
         <style jsx global>{`
-          @import url('https://fonts.googleapis.com/css?family=Basic');
+          @import url('https://fonts.googleapis.com/css?family=Basic|Concert+One');
           * {
             box-sizing: border-box;
             margin: 0%;
@@ -23,7 +23,7 @@ class App extends React.Component {
             text-decoration: none;
           }
           .main-container {
-            margin: 2% 4%;
+            margin: 0% 4%;
             padding: 8%;
             background-color: white;
             height: 200px;

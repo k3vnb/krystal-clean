@@ -48,13 +48,8 @@ function Contact(){
           .icon:hover {
             height: 16.1vw
           }
-          .github-icon, .instagram-icon, .linkedin-icon {
-            border-radius: 23%;
-            box-shadow: 3px 2px 8px #0000008c;
-
-          }
           .contact-top-left {
-            background-color: #e91e63a8;
+            background-color: #f16b98;
           }
           .contact-top-right {
             background-color: #2196f36e;
