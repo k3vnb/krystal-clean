@@ -6,8 +6,8 @@ import { Parallax } from 'react-scroll-parallax';
 const ParallaxContactHeader = () => (
   <Parallax
     className="contact-parallax-container1"
-    offsetXMax={0}
-    offsetXMin={-40}
+    offsetXMax={10}
+    offsetXMin={-10}
     slowerScrollRate
     tag="figure"
   ><style jsx>{`
@@ -26,9 +26,9 @@ const ParallaxContactHeader = () => (
       }
 
       .contact-title {
-        color: #20fee5;
+        color: #33b5a7;
         text-shadow: 1px 1px 1px #000000c2;
-        font-family: 'Didact Gothic', sans-serif;
+        font-family: 'Oswald', sans-serif;
         position: absolute;
         top: 0%;
         right: 16%;
@@ -39,7 +39,7 @@ const ParallaxContactHeader = () => (
       `}</style>
     <div className="contact-banner-container">
 
-      <h1 className="contact-title"><img src={vacuum1} alt="portland's best vacuuming"/>Contact</h1>
+      <h1 className="contact-title"><img src={vacuum1} alt="portland's best vacuuming"/>Contact Us</h1>
     </div>
 
   </Parallax>

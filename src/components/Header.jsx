@@ -36,10 +36,21 @@ class Header extends React.Component {
               display: flex;
               align-items: center;
               justify-content: space-around;
-              font-family: Basic;
+              font-family: 'Oswald', sans-serif;
               color: #2f2f2f;
               position: sticky;
               top: 0px;
+            }
+            .header-title {
+              padding: 1% 3%;
+            }
+            .header-title h1 {
+              text-shadow: .5px .5px .5px #ffffffc2;
+            }
+            .header-title h2 {
+              font-size: 1.1em;
+              color: #2f2f2f;
+              font-weight: lighter;
             }
             .slideshow {
               height: 75vh;
@@ -55,7 +66,7 @@ class Header extends React.Component {
               top: 0%;
               left: 65%;
               background-color: #00000070;
-              padding: 5% 10%;
+              padding: 3% 10%;
               font-family: Basic;
             }
             .slideshow-overlay li {
@@ -65,7 +76,8 @@ class Header extends React.Component {
               border-bottom: .5px solid white;
             }
             .logo {
-              margin: 1% 0%;
+              margin: 1%;
+              padding-left: 1%;
               max-height: 180px;
               border: 1px solid #00ffe1;
               height: 185px;
@@ -79,15 +91,40 @@ class Header extends React.Component {
             .logo img {
               height: 120%;
             }
-
+            @media screen and (max-width: 735px){
+              .slideshow-overlay {
+                left: 50%;
+              }
+            }
+            @media screen and (max-width: 630px){
+              .header-title h1 {
+                font-size: 4.2vw;
+              }
+              .header-title h2 {
+                font-size: .9em;
+              }
+            }
+            @media screen and (max-width: 480px){
+              .header-title h1 {
+                font-size: 1.6em;
+              }
+              .header-title h2 {
+                font-size: .8em;
+              }
+              .slideshow-overlay {
+                padding-top: 20%;
+                left: 0%;
+              }
+            }
             `}</style>
         <div className="header-container">
           <div className="header-top">
             <div className="logo">
               <img src={logo} alt="Krystal Clean PDX"/>
             </div>
-            <div>
-              <h1>Krystal Clear Cleaners, LLC</h1>
+            <div className="header-title">
+              <h1>Krystal Clear Cleaning Service, LLC</h1>
+              <hr />
               <h2>Professional Home Cleaning Services in the Portland, OR area</h2>
             </div>
           </div>

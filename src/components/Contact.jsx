@@ -20,50 +20,38 @@ function Contact(){
             padding-bottom: 6%;
           }
           .contact-container {
-            height: 100vh;
+            height: 90vh;
             border-bottom: 5.6vh solid #3b3b3b;
             position: relative;
           }
           .contact-page-inner {
             width: 100%;
-            height: 100.5%;
+            height: 100%;
             display: flex;
-
             background-size: cover;
             flex-wrap: wrap;
             justify-content: center;
-            align-items: center;
+            align-items: flex-end;
           }
           .contact-box {
             width: 100%;
-            height: 50%;
+            height: 70%;
+            padding: 5%;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
+            justify-content: space-between;
             align-items: center;
-          }
-          .icon {
-            height: 17vw;
-            transition: height .2s ease-out;
-          }
-          .icon:hover {
-            height: 16.1vw
-          }
-          .contact-top-left {
             background-color: #f16b98;
           }
-          .contact-top-right {
-            background-color: #2196f36e;
-          }
-          .contact-bottom-left {
-            background-color: #8bc34a69;
-          }
-          .contact-bottom-right {
-            background-color: #ff9800ad;
-          }
+
+
           `}</style>
       <div className="contact-container">
         <div className="contact-page-inner">
           <div className="contact-box contact-top-left">
+            <h2>Contact Us Today!</h2>
+            <h3>We offer great rates for our expert cleaning service</h3>
+            <h3>Rates may vary depending on requested service, so please send your inquiries to:</h3>
             <div>email arzolanava20@gmail.com</div>
           </div>
         </div>

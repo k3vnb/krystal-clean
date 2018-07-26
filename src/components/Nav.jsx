@@ -8,7 +8,6 @@ class Nav extends React.Component {
   constructor(props){
     super(props);
     this.state = {
-      aboutLinkIsUnderlined: false,
       servicesLinkIsUnderlined: false,
       contactLinkIsUnderlined: false
     };
@@ -34,30 +33,21 @@ class Nav extends React.Component {
   checkViewPort(){
 
     if (window.innerWidth > 450){
-      if (window.scrollY < 1100) {
-        this.setState({aboutLinkIsUnderlined: true});
-        this.setState({servicesLinkIsUnderlined: false});
-        this.setState({contactLinkIsUnderlined: false});
-      } else if (window.scrollY > 1100 && window.scrollY < 2400){
-        this.setState({aboutLinkIsUnderlined: false});
+      if (window.scrollY < 1900) {
         this.setState({servicesLinkIsUnderlined: true});
         this.setState({contactLinkIsUnderlined: false});
-      } else if (window.scrollY > 2400){
-        this.setState({aboutLinkIsUnderlined: false});
+      } else if (window.scrollY > 1900){
         this.setState({servicesLinkIsUnderlined: false});
         this.setState({contactLinkIsUnderlined: true});
       }
     } else if (window.innerWidth < 450){
       if (window.scrollY < 900) {
-        this.setState({aboutLinkIsUnderlined: true});
         this.setState({servicesLinkIsUnderlined: false});
         this.setState({contactLinkIsUnderlined: false});
       } else if (window.scrollY > 900 && window.scrollY < 2000){
-        this.setState({aboutLinkIsUnderlined: false});
         this.setState({servicesLinkIsUnderlined: true});
         this.setState({contactLinkIsUnderlined: false});
       } else if (window.scrollY > 2000){
-        this.setState({aboutLinkIsUnderlined: false});
         this.setState({servicesLinkIsUnderlined: false});
         this.setState({contactLinkIsUnderlined: true});
       }
@@ -154,32 +144,32 @@ class Nav extends React.Component {
             margin-left: 5%;
           }
           .nav-link-underline {
-            border-bottom: 1px solid #d8783f63;
+            border-bottom: 1px solid #87fff1;
             animation: 1s underline ease-in;
           }
           .nav-link-reverse-underline {
-            border-bottom: 0px solid #d8783f63;
+            border-bottom: 0px solid #87fff1;
             animation: .5s reverse-underline ease-in;
           }
           @keyframes underline {
             from {
-              border-bottom: 0px solid #d8783f63;
+              border-bottom: 0px solid #87fff1;
             }
             to {
-              border-bottom: 1px solid #d8783f63;
+              border-bottom: 1px solid #87fff1;
             }
           }
           @keyframes reverse-underline {
             from {
-              border-bottom: 1px solid #d8783f63;
+              border-bottom: 1px solid #87fff1;
             }
             to {
-              border-bottom: 0px solid #d8783f63;
+              border-bottom: 0px solid #87fff1;
             }
           }
           .nav-link-topbar {
             color: #4c4943;
-            font-family: 'Carrois Gothic SC', sans-serif;
+            font-family: 'Oswald', sans-serif;
             font-size: 2vw;
             -webkit-transition: text-shadow .1s;
             -o-transition: text-shadow .1s;
@@ -204,18 +194,8 @@ class Nav extends React.Component {
                object-fit: contain;
             margin-bottom: 1vh;
             margin-left: 5vw;
-            -webkit-transition: .6s transform ease-out;
-            -o-transition: .6s transform ease-out;
-            transition: .6s transform ease-out;
           }
-          .logo:hover {
-            -webkit-transform: rotateY(180deg);
-                    transform: rotateY(180deg);
-          }
-          .logo:active {
-            -webkit-transform: rotateX(180deg);
-                    transform: rotateX(180deg);
-          }
+
           @-webkit-keyframes become-opaque {
             from {
               opacity: 0;
@@ -249,11 +229,16 @@ class Nav extends React.Component {
             }
           }
           @media screen and (max-width: 500px){
+            .logo {
+              margin-left: 0vw;
+            }
+
             .nav-link-topbar {
-              font-size: 12px;
+              font-size: 16px;
             }
             .nav-links-right {
               width: 65%;
+              margin-left: 0;
             }
           }
           `}</style>
@@ -264,9 +249,6 @@ class Nav extends React.Component {
             </div>
           </div>
           <div className="nav-links-right">
-            <div className={this.state.aboutLinkIsUnderlined ? 'nav-link-topbar nav-link-underline' : 'nav-link-topbar nav-link-reverse-underline'} title="go to about section" onClick={() => scrollToPage('.about-container')}>
-              About
-            </div>
             <div className={this.state.servicesLinkIsUnderlined ? 'nav-link-topbar nav-link-underline' : 'nav-link-topbar nav-link-reverse-underline'} title="go to services section" onClick={() => scrollToPage('.services-container')}>
               Services
             </div>

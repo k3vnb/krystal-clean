@@ -17,10 +17,8 @@ function About() {
             padding-top: 5%;
           }
           .main-container {
-            font-family: 'Carrois Gothic', sans-serif;
-            min-height: 120vh;
-            margin-bottom: 55vw;
-          }
+            min-height: 100vh;
+           }
           .icon-img, .icon-img2 {
             height: 300px;
           }
@@ -87,14 +85,18 @@ function About() {
           .card-bottom li {
             list-style: circle;
           }
-          .main-container p {
-            margin-bottom: 5%;
-          }
+
 
           @media screen and (max-width: 900px){
+            .main-container {
+              margin-bottom: 80vh;
+            }
+            .subheader-text {
+              font-size: 20px;
+            }
             .card {
               width: 120%;
-              height: 250px;
+              height: 33%;
               margin: 5% -5%;
               margin-bottom: 5%;
               }
@@ -108,11 +110,27 @@ function About() {
               justify-content: space-between;
             }
             .card-bottom li {
-              width: 50%;
+              width: 47.5%;
               padding-left: 5%;
             }
+            .card-bottom li:nth-child(odd) {
+              margin-right: 1%;
+            }
+            .card-bottom li:nth-child(even) {
+              margin-left: 1%;
+            }
+            .guarantee {
+              max-height: 360px;
             }
           }
+          @media screen and (max-width: 480px){
+            .card-bottom {
+              font-size: .9em;
+            }
+            .main-container {
+              margin-bottom: 40vh;
+            }
+        }
             `}</style>
 
           <div className="subheader-text">

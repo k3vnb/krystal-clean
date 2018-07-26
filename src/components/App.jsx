@@ -14,7 +14,7 @@ class App extends React.Component {
     return (
       <div style={appStyleSheet}>
         <style jsx global>{`
-          @import url('https://fonts.googleapis.com/css?family=Basic|Concert+One');
+          @import url('https://fonts.googleapis.com/css?family=Basic|Concert+One|Oswald');
           * {
             box-sizing: border-box;
             margin: 0%;
@@ -26,12 +26,19 @@ class App extends React.Component {
             margin: 0% 4%;
             padding: 8%;
             background-color: white;
-            height: 200px;
           }
           .slideshow img {
             height: 74vh;
             object-fit: cover;
           }
+          @media screen and (max-width: 900px){
+            .main-container {
+              height: 165vh;
+            }
+          @media screen and (max-width: 745px){
+            .main-container {
+              height: 195vh;
+            }
           @media screen and (max-width: 500px){
             .main-container {
               margin: 3% 4%;
