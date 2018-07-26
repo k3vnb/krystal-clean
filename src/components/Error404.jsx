@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import mop from '../assets/slideshow/mop.jpg';
+import vacuum1 from '../assets/images/vacuum1.png';
 
 function Error404(props){
   return (
     <div className="error404-container">
       <style jsx>{`
           .error404-container {
-            background-image: url(${mop});
+            background-image: url(${vacuum1});
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
+            background-position: right;
             height: 100vh;
             text-align: center;
             padding: 5%;
@@ -29,8 +30,8 @@ function Error404(props){
             text-shadow: 1px 1px 1px #000000b0;
             color: white;
             position: absolute;
-            right: 5%;
-            top: 50%;
+            left: 5%;
+            top: 20%;
           }
           .go-home:hover {
             color: #ffffffbd;

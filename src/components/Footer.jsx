@@ -22,9 +22,6 @@ function Footer(){
             font-size: 10px;
             text-shadow: -.5px .5px 1px black;
           }
-          .copy-to-clipboard:hover {
-            cursor: pointer;
-          }
           a {
             color: white;
           }

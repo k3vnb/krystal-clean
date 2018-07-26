@@ -18,7 +18,7 @@ function About() {
           }
           .main-container {
             min-height: 100vh;
-           }
+          }
           .icon-img, .icon-img2 {
             height: 300px;
           }
@@ -34,15 +34,7 @@ function About() {
             width: 150%;
             margin: 8% -25%;
           }
-          .about-upper-half {
-            width: 33%;
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 2%;
-            margin-bottom: 5%;
-          }
+
           .guarantee {
             max-height: 400px;
           }
@@ -97,7 +89,7 @@ function About() {
               height: 33%;
               margin: 5% -5%;
               margin-bottom: 5%;
-              }
+            }
             .card-bottom {
               padding: 5% 2%;
               font-size: 1em;
@@ -125,6 +117,9 @@ function About() {
             .main-container {
               margin-bottom: 55vh;
             }
+            .icon-img, .icon-img2 {
+              display: none;
+            }
           }
           @media screen and (max-width: 480px){
             .card-bottom {
@@ -133,107 +128,104 @@ function About() {
             .main-container {
               margin-bottom: 40vh;
             }
-            .icon-img, .icon-img2 {
-              display: none;
+          }
+          @media screen and (max-width: 380px){
+            .subheader-text {
+              font-size: 16px;
             }
-        }
-        @media screen and (max-width: 380px){
-          .subheader-text {
-            font-size: 16px;
-          }
-          .main-container {
-            margin-bottom: 60vh;
-          }
-        @media screen and (max-width: 330px){
-          .subheader-text {
-            font-size: 14px;
-          }
-          .main-container {
-            margin-bottom: 85vh;
-          }
-            `}</style>
+            .main-container {
+              margin-bottom: 60vh;
+            }
+            @media screen and (max-width: 330px){
+              .subheader-text {
+                font-size: 14px;
+              }
+              .main-container {
+                margin-bottom: 85vh;
+              }
+              `}</style>
 
-          <div className="subheader-text">
-            <h2>Trusted professional cleaning services for houses, apartments, and condominiums in Portland and Gresham.</h2>
-          </div>
-      <div className="about-upper">
-        <div className="">
-          <img className="icon-img" src={icon}/>
-        </div>
-        <div className="">
-          <img className="guarantee" src={guarantee} alt="100% Satisfaction Guarantee" />
-        </div>
-        <div className="">
-          <img className="icon-img2" src={icon}/>
-        </div>
-      </div>
-      <div className="subheader-text">
-        <h2>Our Services Include:</h2>
-      </div>
-      <div className="about-lower">
-        <div className="card-container">
-          <div className="card">
-            <div className="card-title">
-              Living Rooms, Bed Rooms, Etc.
+            <div className="subheader-text">
+              <h2>Trusted professional cleaning services for houses, apartments, and condominiums in Portland and Gresham.</h2>
             </div>
-            <div className="card-bottom">
-              <ul>
-                <li>Dusting all surfaces</li>
-                <li>Dusting wall art, pictures, fixtures, etc</li>
-                <li>Wiping surfaces</li>
-                <li>Wiping furniture</li>
-                <li>Cleaning baseboards</li>
-                <li>Sanitizing</li>
-                <li>Vacuuming</li>
-                <li>Clearing garbage</li>
-                <li>Etc</li>
-              </ul>
+            <div className="about-upper">
+              <div className="">
+                <img className="icon-img" src={icon}/>
+              </div>
+              <div className="">
+                <img className="guarantee" src={guarantee} alt="100% Satisfaction Guarantee" />
+              </div>
+              <div className="">
+                <img className="icon-img2" src={icon}/>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="card-title">
-              Bathrooms
+            <div className="subheader-text">
+              <h2>Our Services Include:</h2>
             </div>
-            <div className="card-bottom">
-              <ul>
-                <li>Sanitizing & Cleaning toilets, base</li>
-                <li>Cleaning & shining chrome fixtures</li>
-                <li>Cleaning tub, shower, shower doors, sinks</li>
-                <li>Dusting & Wiping fixtures</li>
-                <li>Spot cleaning</li>
-                <li>Mopping floor</li>
-                <li>Washing mirror & countertops</li>
-                <li>Etc</li>
-              </ul>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-title">
-              Kitchens
-            </div>
-            <div className="card-bottom">
-              <ul>
-                <li>Sanitizing & Wiping all surfaces</li>
-                <li>Cleaning chairs/tables/stools</li>
-                <li>Exterior cleaning of cabinets</li>
-                <li>Exterior polishing of fridge, stove, dishwasher</li>
-                <li>Interior & exterior microwave cleaning</li>
-                <li>Wiping appliances</li>
-                <li>Taking out garbage</li>
-                <li>Mopping the floor</li>
-                <li>Spot Cleaning</li>
-                <li>Etc</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div className="subheader-text">
-          <h2 className="subheader-text-2">... And More! Contact us today for pricing estimates and scheduling inquiries. </h2>
-        </div>
+            <div className="about-lower">
+              <div className="card-container">
+                <div className="card">
+                  <div className="card-title">
+                    Living Rooms, Bed Rooms, Etc.
+                  </div>
+                  <div className="card-bottom">
+                    <ul>
+                      <li>Dusting all surfaces</li>
+                      <li>Dusting wall art, pictures, fixtures, etc</li>
+                      <li>Wiping surfaces</li>
+                      <li>Wiping furniture</li>
+                      <li>Cleaning baseboards</li>
+                      <li>Sanitizing</li>
+                      <li>Vacuuming</li>
+                      <li>Clearing garbage</li>
+                      <li>Etc</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-title">
+                    Bathrooms
+                  </div>
+                  <div className="card-bottom">
+                    <ul>
+                      <li>Sanitizing & Cleaning toilets, base</li>
+                      <li>Cleaning & shining chrome fixtures</li>
+                      <li>Cleaning tub, shower, shower doors, sinks</li>
+                      <li>Dusting & Wiping fixtures</li>
+                      <li>Spot cleaning</li>
+                      <li>Mopping floor</li>
+                      <li>Washing mirror & countertops</li>
+                      <li>Etc</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="card">
+                  <div className="card-title">
+                    Kitchens
+                  </div>
+                  <div className="card-bottom">
+                    <ul>
+                      <li>Sanitizing & Wiping all surfaces</li>
+                      <li>Cleaning chairs/tables/stools</li>
+                      <li>Exterior cleaning of cabinets</li>
+                      <li>Exterior polishing of fridge, stove, dishwasher</li>
+                      <li>Interior & exterior microwave cleaning</li>
+                      <li>Wiping appliances</li>
+                      <li>Taking out garbage</li>
+                      <li>Mopping the floor</li>
+                      <li>Spot Cleaning</li>
+                      <li>Etc</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div className="subheader-text">
+                <h2 className="subheader-text-2">... And More! Contact us today for pricing estimates and scheduling inquiries. </h2>
+              </div>
 
-      </div>
-    </div>
-  );
-}
+            </div>
+          </div>
+        );
+      }
 
-export default About;
+      export default About;
