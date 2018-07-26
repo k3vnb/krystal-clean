@@ -1,10 +1,5 @@
 import React from 'react';
-import instagramIcon from '../assets/images/icons/instagram-icon.png';
-import skyBG from '../assets/images/sky-bg.jpg';
-import gmailIcon from '../assets/images/icons/gmail-icon.png';
-import linkedinIcon from '../assets/images/icons/linkedin-icon.png';
 import ParallaxContactHeader from './ParallaxContactHeader';
-import wallpaper from '../assets/images/body-bg.svg';
 
 
 
@@ -68,11 +63,22 @@ function Contact(){
             font-family: Basic;
           }
           @media screen and (max-width: 900px){
+            .contact-box {
+              padding: 8% 5%;
+            }
             .rates-vary {
               font-size: 3vw;
             }
           }
+          @media screen and (max-width: 580px){
+            .email-address {
+              font-size: 7vw;
+            }
+          }
           @media screen and (max-width: 480px){
+            .contact-box {
+              padding: 12% 5%;
+            }
             .email-us {
               font-size: 10vw;
             }
