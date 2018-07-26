@@ -38,6 +38,8 @@ class Header extends React.Component {
               justify-content: space-around;
               font-family: Basic;
               color: #2f2f2f;
+              position: sticky;
+              top: 0px;
             }
             .slideshow {
               height: 75vh;

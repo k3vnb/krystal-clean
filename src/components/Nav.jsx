@@ -98,6 +98,7 @@ class Nav extends React.Component {
             background-color: white;
             border-bottom: .5px solid #ffa90e8c;
             height: 7.8vh;
+            transition: opacity .5s ease-in;
           }
           .topbar-off {
             position: fixed;

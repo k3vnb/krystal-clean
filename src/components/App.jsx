@@ -23,7 +23,7 @@ class App extends React.Component {
             text-decoration: none;
           }
           .main-container {
-            margin: 2% 16%;
+            margin: 2% 4%;
             padding: 8%;
             background-color: white;
             height: 200px;
@@ -34,7 +34,7 @@ class App extends React.Component {
           }
           @media screen and (max-width: 500px){
             .main-container {
-              margin: 3% 8%;
+              margin: 3% 4%;
             }
             `}
         </style>

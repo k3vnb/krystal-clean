@@ -17,22 +17,7 @@ function Contact(){
 
       <style jsx>{`
           .before-contact {
-            font-family: 'Carrois Gothic', sans-serif;
-            background-image: url(${wallpaper});
-            background-repeat: repeat-y;
-            background-size: cover;
-            opacity: .85;
-          }
-          .before-contact-overlay {
-            height: 100%;
-            width: 100%;
-            background-color: white;
-          }
-          .before-contact img {
-            opacity: .3;
-            height: 50px;
-            width: 100%;
-            object-fit: cover;
+            padding-bottom: 6%;
           }
           .contact-container {
             height: 100vh;
@@ -43,14 +28,14 @@ function Contact(){
             width: 100%;
             height: 100.5%;
             display: flex;
-            background-image: url(${skyBG});
+
             background-size: cover;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
           }
           .contact-box {
-            width: 50%;
+            width: 100%;
             height: 50%;
             display: flex;
             justify-content: center;
@@ -84,16 +69,7 @@ function Contact(){
       <div className="contact-container">
         <div className="contact-page-inner">
           <div className="contact-box contact-top-left">
-            <a href="mailto:##" title="email @gmail.com"><img className="gmail-icon icon" src={gmailIcon} alt="Krystal Clean" /></a>
-          </div>
-          <div className="contact-box contact-top-right">
-
-          </div>
-          <div className="contact-box contact-bottom-left">
-            <a href="http://www.instagram.com/k3vnb33" target="_blank" title="Go to Kevin's Instagram"><img className="instagram-icon icon" src={instagramIcon} /></a>
-          </div>
-          <div className="contact-box contact-bottom-right">
-            <a href="http://www.linkedin.com/in/boylekev" target="_blank" title="Go to Kevin's LinkedIn"><img className="linkedin-icon icon" src={linkedinIcon} /></a>
+            <div>email arzolanava20@gmail.com</div>
           </div>
         </div>
       </div>

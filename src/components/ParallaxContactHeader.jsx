@@ -1,18 +1,19 @@
 import React from 'react';
+import vacuum1 from '../assets/images/vacuum1.png';
 import { Parallax } from 'react-scroll-parallax';
 
 
 const ParallaxContactHeader = () => (
   <Parallax
     className="contact-parallax-container1"
-    offsetYMax={90}
-    offsetYMin={-90}
+    offsetXMax={0}
+    offsetXMin={-40}
     slowerScrollRate
     tag="figure"
   ><style jsx>{`
     .contact-parallax-container1 {
       margin-top: 5%;
-      margin-bottom: 5%;
+      margin-bottom: 15%;
     }
       .contact-banner-container {
         position: relative;
@@ -23,21 +24,22 @@ const ParallaxContactHeader = () => (
         opacity: .3;
         object-fit: cover;
       }
-      .contact-banner img {
 
-      }
       .contact-title {
-        color: white;
+        color: #20fee5;
         text-shadow: 1px 1px 1px #000000c2;
         font-family: 'Didact Gothic', sans-serif;
         position: absolute;
-        top: 45%;
+        top: 0%;
         right: 16%;
+      }
+      .contact-title img {
+        max-height: 200px;
       }
       `}</style>
     <div className="contact-banner-container">
 
-      <h1 className="contact-title">Contact</h1>
+      <h1 className="contact-title"><img src={vacuum1} alt="portland's best vacuuming"/>Contact</h1>
     </div>
 
   </Parallax>
