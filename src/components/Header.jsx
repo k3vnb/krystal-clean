@@ -146,7 +146,7 @@ class Header extends React.Component {
               images={images}
               duration={8000}
               transitionDuration={1000}
-              />
+            />
             <ul className="slideshow-overlay">
               <li>Regular Cleaning</li>
               <li>Deep Cleaning</li>
