@@ -206,7 +206,7 @@ function About() {
             <div className="card-bottom">
               <ul>
                 <li>Sanitizing & Wiping all surfaces</li>
-                <li>Cleaning chairs/tables/stools</li>
+                <li>Cleaning chairs/tables</li>
                 <li>Exterior cleaning of cabinets</li>
                 <li>Exterior polishing of fridge, stove, dishwasher</li>
                 <li>Interior & exterior microwave cleaning</li>

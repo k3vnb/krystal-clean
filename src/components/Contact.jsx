@@ -131,7 +131,12 @@ function Contact(){
               padding-bottom: 20vh;
             }
           }
-
+          @media screen and (min-width: 1150px){
+            .contact-box {
+              height: 78%;
+              padding: 3% 5%;
+            }
+          }
           `}</style>
       <div className="contact-container">
         <div className="contact-page-inner">
