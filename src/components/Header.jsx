@@ -1,5 +1,5 @@
-import React, { Component } from 'react';
-import { Slide, Fade } from 'react-slideshow-image';
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
 import logo from '../assets/images/main-logo.png';
 
 

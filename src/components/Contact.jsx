@@ -148,7 +148,7 @@ function Contact(){
               </div>
               <div className="email-address">
                 <div className="contact-line">
-                    <a href="mailto:arzolanava20@gmail.com" title="email house cleaning service in Gresham and Portland Oregon"> <img className="icon-img" src={env} alt="email PDX's best houe cleaning service" title="email best housekeepers in Portland, OR"/> </a>
+                  <a href="mailto:arzolanava20@gmail.com" title="email house cleaning service in Gresham and Portland Oregon"> <img className="icon-img" src={env} alt="email PDX's best houe cleaning service" title="email best housekeepers in Portland, OR"/> </a>
                   <div>
                     arzolanava20@gmail.com
                   </div>
