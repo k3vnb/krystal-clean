@@ -4,7 +4,7 @@ import guarantee from '../assets/images/satisfaction.png';
 function About() {
 
   return(
-    <div className="main-container about-container">
+    <div className="main-container services-container">
       <style jsx>{`
           .subheader-text {
             text-align: center;

@@ -10,7 +10,7 @@ function Footer(){
   let footerRightStyleSheet = {
     position: 'fixed',
     bottom: 2,
-    right: 10,
+    right: '3%',
   };
   return (
     <div className="footer-container">
@@ -38,7 +38,7 @@ function Footer(){
         <h3>Krystal Clear Cleaning</h3>
       </div>
       <div style={footerLeftStyleSheet}>
-        <h3 className="footer-left">site <span className="display-none-sm-scrn">design </span> by <a href="http://pdxwebdev.io" alt="Kevin Boyle, PDX Web Dev">PDX Web Dev</a></h3>
+        <h3 className="footer-left">site <span className="display-none-sm-scrn">design </span> by <a href="http://pdxwebdev.io" alt="Kevin Boyle, PDX Web Dev">PDXWebDev.io</a></h3>
       </div>
     </div>
   );

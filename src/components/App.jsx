@@ -19,6 +19,10 @@ class App extends React.Component {
             box-sizing: border-box;
             margin: 0%;
           }
+          html,
+          body {
+              overflow-x: hidden;
+          }
           a {
             text-decoration: none;
           }
