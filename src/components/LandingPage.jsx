@@ -17,7 +17,7 @@ class LandingPage extends React.Component {
         <div className="landingpage-container">
           <style jsx>{`
             .landingpage-container {
-
+              width: 100vw;
             }
               `}</style>
           <Header />

@@ -1,5 +1,7 @@
 import React from 'react';
 import ParallaxContactHeader from './ParallaxContactHeader';
+import phone1 from '../assets/images/icons8-phone-48.png';
+import env from '../assets/images/icons8-env40.png';
 
 
 
@@ -31,14 +33,14 @@ function Contact(){
           .contact-box {
             width: 100%;
             height: 70%;
-            padding: 5%;
+            padding: 4% 5%;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
             background-color: #f16b98;
           }
-          .email-us {
+          .contact-today {
             font-family: Basic;
             text-decoration: underline;
             color: white;
@@ -58,7 +60,31 @@ function Contact(){
             color: #080808;
             font-weight: lighter;
           }
-          .email-address {
+
+          .contact-line {
+            display: flex;
+            min-height: 50px;
+            align-items: center;
+          }
+          .contact-line a {
+            margin-right: 5%;
+          }
+
+          .icon-img {
+            max-height: 48px;
+            margin-right: 5%;
+            transition: transform .3s;
+          }
+          .icon-img:hover {
+            transform: scale(1.1);
+          }
+          .contact-line:first-child {
+            margin: 5% 0%;
+          }
+          .email-address, .phone-number {
+            color: #252525;
+            text-shadow: .5px .5px 1px #903d3d;
+            line-height: 50px;
             font-size: 3em;
             font-family: Basic;
           }
@@ -71,15 +97,15 @@ function Contact(){
             }
           }
           @media screen and (max-width: 580px){
-            .email-address {
+            .email-address, .phone-number {
               font-size: 7vw;
             }
           }
           @media screen and (max-width: 480px){
             .contact-box {
-              padding: 12% 5%;
+              padding: 7% 5%;
             }
-            .email-us {
+            .contact-today {
               font-size: 10vw;
             }
             h3 {
@@ -91,7 +117,7 @@ function Contact(){
             .rates-vary {
               font-size: 5vw;
             }
-            .email-address {
+            .email-address, .phone-number {
               font-size: 7vw;
             }
           }
@@ -110,10 +136,29 @@ function Contact(){
       <div className="contact-container">
         <div className="contact-page-inner">
           <div className="contact-box">
-            <h2 className="email-us">Email Us Today!</h2>
+            <h2 className="contact-today">Contact Us Today!</h2>
             <h3 className="great-rates">We offer great rates for our expert cleaning service</h3>
             <h3 className="rates-vary">Rates may vary depending on requested service, so please send your inquiries to:</h3>
-            <div className="email-address">arzolanava20@gmail.com</div>
+            <div className="phone-email-box">
+              <div className="phone">
+                <div className="contact-line">
+                  <a href="tel:1-503-405-2230" title="call Portland's premier housekeeper service">
+                    <img className="icon-img" src={phone1} alt="phone" title="phone Oregon's best housekeeping company"/>
+                  </a>
+                  <div className="phone-number">
+                    503-405-2230
+                  </div>
+                </div>
+              </div>
+              <div className="email-address">
+                <div className="contact-line">
+                  <a href="mailto:arzolanava20@gmail.com" title="email house cleaning service in Gresham and Portland Oregon"> <img className="icon-img" src={env} alt="email PDX's best houe cleaning service" title="email best housekeepers in Portland, OR"/> </a>
+                  <div>
+                    arzolanava20@gmail.com
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

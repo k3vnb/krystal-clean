@@ -1,9 +1,7 @@
-import React, { Component } from 'react';
-import { Slide, Fade } from 'react-slideshow-image';
+import React from 'react';
+import { Fade } from 'react-slideshow-image';
 import logo from '../assets/images/main-logo.png';
-// import vacuum from 'assets/slideshow/vacuum.jpg';
-// import mop from 'assets/slideshow/mop.jpg';
-// import bathroom from 'assets/slideshow/bathroom.jpg';
+
 
 
 class Header extends React.Component {
@@ -146,10 +144,10 @@ class Header extends React.Component {
               images={images}
               duration={8000}
               transitionDuration={1000}
-              />
+            />
             <ul className="slideshow-overlay">
-              <li>Regular Cleaning</li>
               <li>Deep Cleaning</li>
+              <li>Regular Cleaning</li>
               <li>Eco-Friendly Cleaning</li>
             </ul>
           </div>
