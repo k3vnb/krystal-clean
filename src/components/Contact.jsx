@@ -73,6 +73,10 @@ function Contact(){
           .icon-img {
             max-height: 48px;
             margin-right: 5%;
+            transition: transform .3s;
+          }
+          .icon-img:hover {
+            transform: scale(1.1);
           }
           .contact-line:first-child {
             margin: 5% 0%;
